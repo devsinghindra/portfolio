@@ -7,7 +7,7 @@ import Projects from "./Projects/Projects";
 import Contacts from "./Contacts/Contacts";
 import Resume from "./Resume/Resume";
 
-import "./App.css";
+import styles from "./App.module.css";
 
 function App() {
   return (

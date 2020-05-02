@@ -1,11 +1,11 @@
 import React from "react";
-import "./Home.css";
+import styles from "./Home.module.css";
 
 function Home() {
   return (
-    <div className="bg">
-      <h1 className="title">Myself Devendra Singh.</h1>
-      <p className="content">
+    <div className={styles.bg}>
+      <h1 className={styles.title}>Myself Devendra Singh.</h1>
+      <p className={styles.content}>
         Currently pursuing B.Tech in Computer Science & Engineering at NIT
         Patna. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id
         dicta rerum distinctio enim quaerat. Voluptatibus recusandae consectetur

@@ -1,37 +1,26 @@
 nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   text-align: center;
   height: min-content;
   background-color: rgb(0, 0, 0);
 }
 
 h2 {
-  margin: 2%;
+  margin: 10% 0 10%;
 }
 
-.heading {
-  position: static;
-  padding-left: 21%;
-  color: rgb(255, 255, 255);
-  font-size: 2rem;
-}
-
-.nav-links {
+.navLinks {
   width: 100%;
+  height: min-content;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  text-decoration: none;
 }
 
-.underline {
-  text-decoration: none;
-}
-
-.nav-item {
+.navItem {
   font-size: 0.81rem;
   text-decoration: none;
-  margin: 0 1%;
+  margin: 0 1% 0;
   color: rgb(255, 255, 255);
 }
