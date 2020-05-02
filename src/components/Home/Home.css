@@ -1,0 +1,26 @@
+.container {
+  margin: 0;
+  width: 100%;
+  flex: 1;
+  height: 100%;
+}
+
+.title {
+  text-align: center;
+  margin: 0;
+  padding: 10vh 0 0 0;
+}
+
+.content {
+  text-align: center;
+  padding: 10vw;
+}
+
+.bg {
+  flex: 1;
+  background-image: url("../../images/dreamPic.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.95;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,37 @@
+nav {
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  height: min-content;
+  background-color: rgb(0, 0, 0);
+}
+
+h2 {
+  margin: 2%;
+}
+
+.heading {
+  position: static;
+  padding-left: 21%;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+}
+
+.nav-links {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-decoration: none;
+}
+
+.underline {
+  text-decoration: none;
+}
+
+.nav-item {
+  font-size: 0.81rem;
+  text-decoration: none;
+  margin: 0 1%;
+  color: rgb(255, 255, 255);
+}
