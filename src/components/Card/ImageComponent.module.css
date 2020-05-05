@@ -1,0 +1,32 @@
+.modal {
+  transform: scale(0.3);
+  background-color: papayawhip;
+  width: fit-content;
+  height: fit-content;
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(223, 223, 223, 0.952);
+}
+
+.small {
+  /* max-height: 100%; */
+  margin-left: auto;
+  border-color: black;
+  border-width: thin;
+  border-style: solid;
+  text-align: center;
+  margin-right: auto;
+  display: block;
+  height: 30vh;
+  width: 100%;
+}
