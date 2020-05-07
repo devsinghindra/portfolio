@@ -6,6 +6,11 @@ import ReactModel from "react-modal";
 function ImageComponent(props) {
   const [open, setOpen] = useState(false);
 
+  const largeStyle =
+    props.src.includes("librarian") || props.src.includes("flutter")
+      ? ""
+      : styles.largeModal;
+
   function handleShowDialog() {
     setOpen(!open);
     console.log("cliked");
@@ -21,8 +26,9 @@ function ImageComponent(props) {
       />
       {open && (
         <ReactModel
-          className={styles.modal}
+          className={`${styles.modal} ${largeStyle}`}
           isOpen={open}
+          onRequestClose={handleShowDialog}
           onClick={handleShowDialog}
           overlayClassName={styles.Overlay}
         >
@@ -30,7 +36,7 @@ function ImageComponent(props) {
             className={styles.large}
             src={props.src}
             onClick={handleShowDialog}
-            alt="projec"
+            alt="project"
           />
         </ReactModel>
       )}

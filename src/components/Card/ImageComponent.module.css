@@ -1,8 +1,15 @@
 .modal {
   transform: scale(0.3);
   background-color: papayawhip;
+  border-color: black;
+  border-width: thick;
+  border-style: solid;
   width: fit-content;
   height: fit-content;
+}
+
+.largeModal {
+  transform: scale(0.5);
 }
 
 .Overlay {
@@ -15,7 +22,7 @@
   display: flex !important;
   align-items: center;
   justify-content: center;
-  background-color: rgba(223, 223, 223, 0.952);
+  background-color: rgba(0, 0, 0, 0.897);
 }
 
 .small {
