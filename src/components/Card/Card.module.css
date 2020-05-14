@@ -7,17 +7,5 @@
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.2), 0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
   text-align: center;
-  margin: 0 20px 20px;
+  margin: 0 20px 40px;
 }
-
-/* img {
-  margin-left: auto;
-  border-color: black;
-  border-width: thin;
-  border-style: solid;
-  text-align: center;
-  margin-right: auto;
-  display: block;
-  height: 30vh;
-  width: 100%;
-} */
