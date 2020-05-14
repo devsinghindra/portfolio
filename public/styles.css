@@ -5,6 +5,8 @@ html {
   height: 100vh;
   display: flex;
   flex-flow: column;
+  /* dangerous property */
+  overflow-x: hidden;
   width: 100vw;
 }
 
