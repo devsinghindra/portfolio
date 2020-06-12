@@ -8,21 +8,22 @@
 .title {
   text-align: center;
   margin: 0;
-  padding: 10vh 0 0 0;
-  color: white;
+  padding: 1vh 0 0 0;
+  color: rgb(0, 0, 0);
   font-size: 3rem;
 }
 
 .content {
   text-align: center;
   padding: 10vw;
-  color: rgb(255, 255, 255);
+  font-style: italic;
+  color: rgb(12, 11, 11);
   font-size: 1.5rem;
 }
 
 .bg {
   flex: 1;
-  background-image: url("../../assets/dreamPic.jpg");
+  /* background-image: url("../../assets/dreamPic.jpg"); */
   background-size: cover;
   background-attachment: fixed;
   /* opacity: 0.25; */
