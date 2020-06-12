@@ -1,21 +1,22 @@
 .container {
-  margin: 0;
-  width: 100%;
   flex: 1;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 100px;
 }
 
-.title {
+.title h1 {
   text-align: center;
   margin: 0;
-  padding: 1vh 0 0 0;
+  padding: 0;
   color: rgb(0, 0, 0);
   font-size: 3rem;
 }
 
 .content {
   text-align: center;
-  padding: 10vw;
+  padding: 10vh;
   font-style: italic;
   color: rgb(12, 11, 11);
   font-size: 1.5rem;

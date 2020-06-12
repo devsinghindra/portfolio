@@ -1,25 +1,25 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import styles from "./Nav.module.css";
 
 function Nav() {
   return (
-    <div>
+    <div style={{ position: "fixed", width: "100%" }}>
       <nav className={styles.nav}>
-        <Link to="/" className={styles.navItem}>
+        <NavLink to="/" className={styles.navItem} exact activeClassName={styles.navActive}>
           <h2>Home</h2>
-        </Link>
+        </NavLink>
         <div className={styles.navLinks}>
-          <Link to="/projects" className={styles.navItem}>
+          <NavLink to="/projects" className={styles.navItem} activeClassName={styles.navActive}>
             <h2>Projects</h2>
-          </Link>
-          <Link to="/contacts" className={styles.navItem}>
+          </NavLink>
+          <NavLink to="/contacts" className={styles.navItem} activeClassName={styles.navActive}>
             <h2>Contacts</h2>
-          </Link>
-          <Link to="/resume" className={styles.navItem}>
+          </NavLink>
+          <NavLink to="/resume" className={styles.navItem} activeClassName={styles.navActive}>
             <h2>Resume</h2>
-          </Link>
+          </NavLink>
         </div>
       </nav>
     </div>

@@ -1,13 +1,6 @@
-/* .bg {
-  height: 100vh;
-  background-position: cover;
-  background-image: url("../images/dreamPic.jpg");
-  background-size: cover;
-  opacity: 0.95;
-  background-repeat: no-repeat;
-} */
-/* 
-.opaque {
-  background: white;
-  color: white;
-} */
+.container {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}

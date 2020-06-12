@@ -12,7 +12,7 @@ import styles from "./App.module.css";
 function App() {
   return (
     <Router>
-      <div style={{ flex: "1", display: "flex", flexFlow: "column" }}>
+      <div className={styles.container}>
         <Nav />
         <Switch>
           <Route path="/" exact component={Home} />
@@ -21,7 +21,7 @@ function App() {
           <Route path="/resume" exact component={Resume} />
         </Switch>
       </div>
-    </Router>
+    </Router >
   );
 }
 
