@@ -1,12 +1,11 @@
-nav {
+.nav {
   display: flex;
   justify-content: space-evenly;
   margin: 5px 10px;
   text-align: center;
   height: min-content;
   background-color: #24252a;
-  border: 1px solid rgb(126, 126, 126);
-  border-radius: 20px;
+  border: 1px solid white;
 }
 
 h2 {

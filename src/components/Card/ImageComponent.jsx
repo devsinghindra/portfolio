@@ -33,7 +33,6 @@ function ImageComponent(props) {
           overlayClassName={styles.Overlay}
         >
           <img
-            className={styles.large}
             src={props.src}
             onClick={handleShowDialog}
             alt="project"
