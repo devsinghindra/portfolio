@@ -1,0 +1,23 @@
+.Container {
+  flex: 1;
+  display: flex;
+  /* background-color: #101010; */
+  color: white;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  background: linear-gradient(-150deg, #101010 15%, #555555 70%, #101010 94%);
+}
+
+.Container img {
+  height: 300px;
+  width: 300px;
+  margin: 10px 20px;
+  border: 1px solid rgba(3, 3, 3, 0.418);
+  border-radius: 50%;
+}
+
+.Container h1 {
+  margin: 0 10%;
+}

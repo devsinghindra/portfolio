@@ -1,0 +1,35 @@
+.Project {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 50px;
+}
+
+.Desc {
+  padding-right: 50px;
+  width: 25vw;
+}
+
+.Desc h1 {
+  font-size: 3rem;
+}
+
+.Desc p {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.PrOver {
+  background-color: #f1f1f1;
+  padding: 50px;
+  margin-bottom: 50px;
+}
+
+.PrOver img {
+  height: 400px;
+  width: 600px;
+  margin: 0 0 -100px;
+  position: relative;
+  -webkit-box-shadow: 0 5px 30px rgba(0, 0, 0, 1);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 1);
+  border-radius: 3px;
+}

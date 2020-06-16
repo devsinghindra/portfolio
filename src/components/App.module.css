@@ -1,6 +1,13 @@
-.container {
+.Container {
   flex: 1;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
+}
+
+.Footer {
+  background-color: #121316;
+  text-align: center;
+  color: white;
+  letter-spacing: 0.15rem;
 }

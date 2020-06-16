@@ -1,33 +1,98 @@
-.container {
+.Container {
   flex: 1;
   display: flex;
-  background-color: #161922;
-  color: white;
   flex-direction: column;
-  padding-top: 100px;
+  justify-content: space-evenly;
 }
 
-.title h1 {
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  /* color: rgb(0, 0, 0); */
+.Bio {
+  display: flex;
+  background-color: #191919;
+  justify-content: center;
+  color: white;
+  padding: 50px 100px 250px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
+}
+
+.Intro {
+  padding-right: 50px;
+  width: 25vw;
+}
+
+.Intro h1 {
   font-size: 3rem;
-  font-weight: bolder;
+  letter-spacing: 0.3rem;
 }
 
-.content {
-  text-align: center;
+.Intro p {
+  font-size: 2rem;
   font-style: italic;
-  /* color: rgb(12, 11, 11); */
-  font-size: 4.5rem;
 }
 
-.bg {
-  flex: 1;
-  /* background-image: url("../../assets/dreamPic.jpg"); */
-  background-size: cover;
-  background-attachment: fixed;
-  /* opacity: 0.25; */
-  background-repeat: no-repeat;
+.Over {
+  background-color: #121316;
+  padding: 50px;
+  margin-bottom: 50px;
+}
+
+.Over img {
+  height: 350px;
+  width: 300px;
+  margin: 0 0 -100px;
+  position: relative;
+  -webkit-box-shadow: 0 5px 30px rgba(0, 0, 0, 1);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 1);
+  border-radius: 3px;
+}
+
+.Featured {
+  display: flex;
+  /* background-color: black; */
+  flex-flow: column;
+  justify-content: space-evenly;
+  padding: 100px 100px;
+}
+
+.Featured h1 {
+  color: rgb(97, 97, 97);
+  border-bottom: 5px rgb(161, 161, 161) solid;
+  line-height: 4rem;
+}
+
+.Touch {
+  background-color: #121316;
+  padding: 100px 100px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
+}
+
+.Touch h1 {
+  letter-spacing: 0;
+}
+
+.Links {
+  color: white;
+  display: flex;
+  flex-flow: column;
+  /* text-align: center; */
+  justify-content: space-around;
+  /* align-items: center; */
+  padding: 1%;
+}
+
+.Element {
+  display: flex;
+  align-items: center;
+}
+
+.Element a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.Element a:hover {
+  color: yellow;
 }

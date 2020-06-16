@@ -16,13 +16,13 @@ function Contacts() {
       <h1 className={styles.Title}>Contact</h1>
       <div className={styles.Element}>
         <div>
-          <a target="_blank" href="https://linkedin.com/in/devsinghindra">
+          <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/devsinghindra">
             <LinkedIn style={buttonStyle} />
           </a>
-          <a target="_blank" href="https://github.com/devsinghindra">
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/devsinghindra">
             <GitHub style={buttonStyle} />
           </a>
-          <a target="_blank" href="https://github.com/devsinghindra">
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/devsinghindra">
             <Facebook style={buttonStyle} />
           </a>
         </div>

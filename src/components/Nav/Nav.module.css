@@ -1,16 +1,18 @@
 .nav {
   display: flex;
-  justify-content: space-evenly;
-  margin: 5px 10px;
+  justify-content: space-around;
   text-align: center;
-  height: min-content;
-  background-color: #24252a;
-  border: 1px solid white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #191919;
+  align-items: center;
 }
 
-h2 {
-  margin: 15% 0 15%;
-  font-weight: 400;
+.Logo {
+  font-size: 1.5rem;
+  padding-left: 50px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
 .navLinks {
@@ -18,17 +20,22 @@ h2 {
   height: min-content;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  padding-right: 50px;
 }
 
 .navItem {
-  font-size: 0.81rem;
+  font-size: 1rem;
   text-decoration: none;
-  margin: 0 1% 0;
+  margin: 0 25px;
   color: rgb(255, 255, 255);
 }
 
-.navItem :hover {
+.navItem h2 {
+  font-weight: 400;
+}
+
+.navItem :hover,
+.Logo:hover {
   color: yellow;
 }
 
