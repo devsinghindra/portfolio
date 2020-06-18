@@ -19,9 +19,12 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/about" exact component={About} />
           <Route path="/projects" exact component={Projects} />
-          <Route path="/contacts" exact component={Contacts} />
+          {/* <Route path="/contacts" exact component={Contacts} /> */}
           <Route path="/resume" exact component={Resume} />
         </Switch>
+        <div id="contacts">
+          <Contacts />
+        </div>
         <div className={styles.Footer}>
           <p class="copyright">© {new Date().getFullYear()} Devendra Singh.</p>
         </div>

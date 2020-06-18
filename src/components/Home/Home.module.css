@@ -10,6 +10,7 @@
   background-color: #191919;
   justify-content: center;
   color: white;
+  align-items: center;
   padding: 50px 100px 250px;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
 }
@@ -36,8 +37,8 @@
 }
 
 .Over img {
-  height: 350px;
-  width: 300px;
+  height: 400px;
+  width: 350px;
   margin: 0 0 -100px;
   position: relative;
   -webkit-box-shadow: 0 5px 30px rgba(0, 0, 0, 1);
@@ -57,42 +58,4 @@
   color: rgb(97, 97, 97);
   border-bottom: 5px rgb(161, 161, 161) solid;
   line-height: 4rem;
-}
-
-.Touch {
-  background-color: #121316;
-  padding: 100px 100px;
-  display: flex;
-  justify-content: center;
-  color: white;
-  clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
-}
-
-.Touch h1 {
-  letter-spacing: 0;
-}
-
-.Links {
-  color: white;
-  display: flex;
-  flex-flow: column;
-  /* text-align: center; */
-  justify-content: space-around;
-  /* align-items: center; */
-  padding: 1%;
-}
-
-.Element {
-  display: flex;
-  align-items: center;
-}
-
-.Element a {
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-
-.Element a:hover {
-  color: yellow;
 }

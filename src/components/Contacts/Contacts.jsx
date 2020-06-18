@@ -1,29 +1,41 @@
 import React from "react";
 import styles from "./Contacts.module.css";
-import { LinkedIn, GitHub, Facebook } from "@material-ui/icons";
+import { LinkedIn, GitHub, Mail } from "@material-ui/icons";
 
 function Contacts() {
 
-  const buttonStyle = {
+
+  const linkStyle = {
     color: 'white',
-    height: '4rem',
-    width: '4rem',
-    margin: '0 10px'
+    height: '3rem',
+    width: '3rem',
+    margin: '5px 10px'
   };
+
 
   return (
     <div className={styles.Container}>
-      <h1 className={styles.Title}>Contact</h1>
-      <div className={styles.Element}>
-        <div>
+      <div className={styles.Touch}>
+        <h1>Love programming as much as I do?</h1>
+        <p> Let's make something bigger together.</p>
+      </div>
+      <div className={styles.Links}>
+        <div className={styles.Element}>
+          <Mail style={linkStyle} />
+          <a target="_blank" rel="noopener noreferrer" href="mailto:devsinghindra@gmail.com">
+            DEVSINGHINDRA@GMAIL.COM
+          </a>
+        </div>
+        <div className={styles.Element}>
+          <LinkedIn style={linkStyle} />
           <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/devsinghindra">
-            <LinkedIn style={buttonStyle} />
+            On LinkedIn.
           </a>
+        </div>
+        <div className={styles.Element}>
+          <GitHub style={linkStyle} />
           <a target="_blank" rel="noopener noreferrer" href="https://github.com/devsinghindra">
-            <GitHub style={buttonStyle} />
-          </a>
-          <a target="_blank" rel="noopener noreferrer" href="https://github.com/devsinghindra">
-            <Facebook style={buttonStyle} />
+            On Github.
           </a>
         </div>
       </div>

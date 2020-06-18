@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 
 import styles from "./Nav.module.css";
-import Contacts from "../Contacts/Contacts";
 
 function Nav() {
   return (
@@ -20,9 +19,11 @@ function Nav() {
           <NavLink to="/projects" className={styles.navItem} activeClassName={styles.navActive}>
             <h2>Projects</h2>
           </NavLink>
-          <NavLink to="/contacts" className={styles.navItem} activeClassName={styles.navActive}>
+          {/* <NavLink to="#contacts" className={styles.navItem} activeClassName={styles.navActive}> */}
+          <a href="#contacts" className={styles.navItem}>
             <h2>Contacts</h2>
-          </NavLink>
+          </a>
+          {/* </NavLink> */}
           <NavLink to="/resume" target="_blank" className={styles.navItem} activeClassName={styles.navActive}>
             <h2>Resume</h2>
           </NavLink>

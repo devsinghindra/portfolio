@@ -1,23 +1,63 @@
 .Container {
   flex: 1;
   display: flex;
-  /* background-color: #101010; */
-  color: white;
-  flex-flow: column;
-  align-items: center;
-  text-align: center;
+  flex-direction: column;
   justify-content: space-evenly;
-  background: linear-gradient(-150deg, #101010 15%, #555555 70%, #101010 94%);
 }
 
-.Container img {
-  height: 300px;
+.Heading {
+  background-color: #191919;
+  color: white;
+  text-align: center;
+  padding: 0 0 250px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
+}
+
+.Heading h1 {
+  font-size: 5rem;
+}
+
+.Bio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "Intro Intro"
+    "Over Over"
+    "Over Over";
+  padding: 50px 100px 250px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
+}
+
+.Intro {
+  grid-area: Intro;
+  padding-right: 50px;
+  /* width: 25vw; */
+}
+
+.Intro h1 {
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+}
+
+.Intro p {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.Over {
+  grid-area: Over;
+  background-color: #f5f5f5;
+  padding: 50px;
+  margin-bottom: 50px;
+}
+
+.Over img {
+  height: 350px;
   width: 300px;
-  margin: 10px 20px;
-  border: 1px solid rgba(3, 3, 3, 0.418);
-  border-radius: 50%;
-}
-
-.Container h1 {
-  margin: 0 10%;
+  margin: 0 0 -100px;
+  position: relative;
+  -webkit-box-shadow: 0 5px 30px rgba(0, 0, 0, 1);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 1);
+  border-radius: 3px;
 }

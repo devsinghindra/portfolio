@@ -12,8 +12,14 @@
   font-size: 1.5rem;
   padding-left: 50px;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: white;
 }
+/* 
+.LogoLink {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border-bottom: 2px solid blue;
+} */
 
 .navLinks {
   width: 100%;
@@ -41,5 +47,6 @@
 
 .navActive {
   color: orange;
+  /* border-bottom: 2px solid blue; */
   text-decoration: underline;
 }

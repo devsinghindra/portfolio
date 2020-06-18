@@ -1,28 +1,48 @@
 .Container {
-  flex: 1;
+  background-color: #121316;
+  padding: 100px 100px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  padding-top: 70px;
-  /* background-color: #252934; */
-  background: linear-gradient(-150deg, #101010 15%, #555555 70%, #101010 94%);
-  border: 2px solid black;
+  justify-content: center;
+  color: white;
+  clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
 }
 
-.Title {
-  color: white;
+.Touch {
+  padding-right: 50px;
+  width: 25vw;
+}
+
+.Touch h1 {
+  letter-spacing: 0;
   font-size: 3rem;
-  letter-spacing: 0.2rem;
+}
+
+.Touch p {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.Links {
+  color: white;
+  display: flex;
+  flex-flow: column;
+  /* text-align: center; */
+  justify-content: space-around;
+  /* align-items: center; */
+  padding: 1%;
 }
 
 .Element {
-  color: white;
   display: flex;
-  margin: 0 0;
-  background-color: #101010;
-  opacity: 0.7;
-  justify-content: center;
   align-items: center;
-  padding: 1%;
+}
+
+.Element a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.Element a:hover {
+  color: yellow;
 }
