@@ -10,16 +10,21 @@
 
 .Logo {
   font-size: 1.5rem;
-  padding-left: 50px;
+  margin-left: 50px;
+  letter-spacing: 0.2rem;
   text-decoration: none;
   color: white;
 }
-/* 
-.LogoLink {
+
+.Logo h2 {
+  margin-bottom: 1px;
+}
+
+.LogoActive {
   text-decoration: none;
   color: rgb(255, 255, 255);
-  border-bottom: 2px solid blue;
-} */
+  border-bottom: 4px solid orange;
+}
 
 .navLinks {
   width: 100%;
@@ -38,15 +43,16 @@
 
 .navItem h2 {
   font-weight: 400;
+  margin-bottom: 1px;
 }
 
 .navItem :hover,
 .Logo:hover {
-  color: yellow;
+  color: orange;
 }
 
 .navActive {
-  color: orange;
-  /* border-bottom: 2px solid blue; */
-  text-decoration: underline;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border-bottom: 4px solid orange;
 }

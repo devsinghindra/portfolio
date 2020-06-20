@@ -7,11 +7,11 @@ function Nav() {
   return (
     <div>
       <nav className={styles.nav}>
-        <div className={styles.Logo}>
-          <NavLink to="/" exact className={styles.Logo} activeClassName={styles.navActive}>
-            <h2>Home</h2>
-          </NavLink>
-        </div>
+        {/* <div className={styles.Logo}> */}
+        <NavLink to="/" exact className={styles.Logo} activeClassName={styles.LogoActive}>
+          <h2>DEV</h2>
+        </NavLink>
+        {/* </div> */}
         <div className={styles.navLinks}>
           <NavLink to="/about" className={styles.navItem} activeClassName={styles.navActive}>
             <h2>About</h2>
