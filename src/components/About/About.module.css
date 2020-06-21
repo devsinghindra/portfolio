@@ -19,13 +19,16 @@
 
 .Bio {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
   grid-template-areas:
     "Intro Intro"
     "Over Over"
-    "Over Over";
-  padding: 50px 100px 250px;
+    "Education Education"
+    "Skills Skills"
+    "Languages Languages"
+    "Other Other";
+  padding: 50px 100px 150px;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
 }
 
@@ -49,6 +52,10 @@
   grid-area: Over;
   background-color: #f5f5f5;
   padding: 50px;
+  display: flex;
+  justify-self: center;
+  width: fit-content;
+  height: fit-content;
   margin-bottom: 50px;
 }
 
@@ -60,4 +67,81 @@
   -webkit-box-shadow: 0 5px 30px rgba(0, 0, 0, 1);
   box-shadow: 0 5px 30px rgba(0, 0, 0, 1);
   border-radius: 3px;
+}
+
+.Education {
+  grid-area: Education;
+  margin: 40px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+}
+
+/* .Title {
+  grid-area: Title;
+} */
+
+.Title h3 {
+  font-size: 2rem;
+  margin: 0 0 0px;
+  color: rgb(16, 16, 88);
+}
+
+.School {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1fr;
+  font-size: 1.5rem;
+  justify-content: space-between;
+}
+
+.School span {
+  font-weight: 500;
+  padding: 8px 10px;
+}
+
+.Skills {
+  grid-area: Skills;
+  display: flex;
+  flex-flow: column;
+}
+
+.Languages {
+  grid-area: Languages;
+  display: flex;
+  flex-flow: column;
+}
+
+.Other {
+  grid-area: Other;
+  display: flex;
+  flex-flow: column;
+  border-bottom: 2px solid black;
+}
+
+.Box {
+  grid-area: Box;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.Skill {
+  /* grid-area: Skill; */
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100px;
+  margin: 10px 10px;
+}
+
+.Skill img {
+  height: 100px;
+  width: 100px;
+  padding: 0 10px;
+}
+
+.Skill h1 {
+  font-size: 1.5rem;
+  padding: 10px 10px;
 }

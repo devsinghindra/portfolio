@@ -1,11 +1,34 @@
 import React from "react";
+import { motion } from "framer-motion";
+
 import styles from "./Projects.module.css";
-import ProjectCard from "../Card/ProjectCard";
+import ProjectCard from "../Card/ProjectCard/ProjectCard";
 import images from "../../images";
+
+
+const containerVariants = {
+  hidden: {
+    opacity: 0.9,
+  },
+  visible: {
+    opacity: 1,
+    type: "tween",
+    transition: { duration: 2 }
+  },
+  exit: {
+    x: "-100vh",
+    transition: { ease: 'easeInOut', duration: 1 }
+  }
+};
 
 function Projects() {
   return (
-    <div className={styles.Container}>
+    <motion.div className={styles.Container}
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
       <div className={styles.Heading}>
         <h1>My Projects.</h1>
       </div>
@@ -22,7 +45,7 @@ function Projects() {
           );
         })}
       </div>
-    </div>
+    </motion.div>
   );
 }
 

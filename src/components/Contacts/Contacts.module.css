@@ -38,11 +38,12 @@
 }
 
 .Element a {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-decoration: none;
+  padding-left: 10px;
   color: rgb(255, 255, 255);
 }
 
 .Element a:hover {
-  color: yellow;
+  color: orange;
 }

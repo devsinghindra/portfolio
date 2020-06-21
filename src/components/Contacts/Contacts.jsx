@@ -1,4 +1,6 @@
 import React from "react";
+import { motion } from "framer-motion";
+
 import styles from "./Contacts.module.css";
 import { LinkedIn, GitHub, Mail } from "@material-ui/icons";
 
@@ -22,21 +24,27 @@ function Contacts() {
       <div className={styles.Links}>
         <div className={styles.Element}>
           <Mail style={linkStyle} />
-          <a target="_blank" rel="noopener noreferrer" href="mailto:devsinghindra@gmail.com">
-            DEVSINGHINDRA@GMAIL.COM
-          </a>
+          <motion.a target="_blank" rel="noopener noreferrer" href="mailto:devsinghindra@gmail.com"
+            whileHover={{ scale: 1.1 }}
+          >
+            devsinghindra@gmail.com
+          </motion.a>
         </div>
         <div className={styles.Element}>
           <LinkedIn style={linkStyle} />
-          <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/devsinghindra">
+          <motion.a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/devsinghindra"
+            whileHover={{ scale: 1.1 }}
+          >
             On LinkedIn.
-          </a>
+          </motion.a>
         </div>
         <div className={styles.Element}>
           <GitHub style={linkStyle} />
-          <a target="_blank" rel="noopener noreferrer" href="https://github.com/devsinghindra">
+          <motion.a target="_blank" rel="noopener noreferrer" href="https://github.com/devsinghindra"
+            whileHover={{ scale: 1.1 }}
+          >
             On Github.
-          </a>
+          </motion.a>
         </div>
       </div>
     </div>

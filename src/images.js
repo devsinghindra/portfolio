@@ -1,12 +1,12 @@
-import todo from "./assets/todo.png";
-import chatRoom from "./assets/chatRoom1.png";
-import covid19 from "./assets/covid19.png";
-import keeper from "./assets/keeper.png";
-import secrets from "./assets/secrets1.png";
-import flutterChat from "./assets/flutterChat1.jpg";
-import flutterTodo from "./assets/flutterTodo.jpg";
-import librarian from "./assets/librarian5.jpg";
-import profilePic from "./assets/dreamPro.jpg";
+import todo from "./assets/images/todo.png";
+import chatRoom from "./assets/images/chatRoom1.png";
+import covid19 from "./assets/images/covid19.png";
+import keeper from "./assets/images/keeper.png";
+import secrets from "./assets/images/secrets1.png";
+import flutterChat from "./assets/images/flutterChat1.jpg";
+import flutterTodo from "./assets/images/flutterTodo.jpg";
+import librarian from "./assets/images/librarian5.jpg";
+import profilePic from "./assets/images/dreamPro.jpg";
 
 const images = [
   {
@@ -32,7 +32,7 @@ const images = [
     src: covid19,
     title: "Covid Tracker",
     link: "http://covid19tracer.herokuapp.com/",
-    description: "A covid19 tracker web app made using reactjs for front-end and chartjs for plotting various charts and axios for api calls",
+    description: "A covid19 tracker web app made using reactjs for front-end and chartjs for plotting various charts and axios for api calls.",
   },
   {
     id: 4,

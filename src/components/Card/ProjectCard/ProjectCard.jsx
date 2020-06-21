@@ -1,4 +1,6 @@
 import React from "react";
+import { motion } from "framer-motion";
+
 import styles from "./ProjectCard.module.css";
 
 function ProjectCard(props) {
@@ -8,15 +10,24 @@ function ProjectCard(props) {
 
     return (
         <div className={styles.Project}>
-            <div className={`${styles.PrOver} ${flutterStyle}`}>
+            <motion.div
+
+                initial={{ x: "-100vw" }}
+                animate={{ x: 0 }}
+                transition={{ duration: 1.5 }}
+                className={`${styles.PrOver} ${flutterStyle}`}>
                 <a target="_blank" rel="noopener noreferrer" href={props.link}><img src={props.src} alt="" /></a>
-            </div>
-            <div className={styles.Desc}>
+            </motion.div>
+            <motion.div
+                initial={{ x: "100vw" }}
+                animate={{ x: 0 }}
+                transition={{ duration: 1.5 }}
+                className={styles.Desc}>
                 <h1>{props.title}</h1>
                 <p>
                     {props.description}
                 </p>
-            </div>
+            </motion.div>
         </div>
     );
 }
