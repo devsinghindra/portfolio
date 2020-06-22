@@ -39,7 +39,7 @@ function About() {
                     <p>
                         I am Devendra Singh.
                         Future Software Engineer, Web developer.
-                        People call me Dev. I like to call myself devsinghindra 😅😅.
+                        People call me Dev. I like to call myself devsinghindra <span role="img" aria-label="emoji">😅😅</span>.
                         I am avid learner who like to learn new framework and tools.
                         I like to travel and play video games alot.
                         I am currently pursuing B.Tech from NIT Patna in Computer Science and Engineering.

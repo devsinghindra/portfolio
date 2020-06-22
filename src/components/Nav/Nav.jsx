@@ -34,7 +34,7 @@ function Nav() {
               whileHover={{ scale: 1.2 }}
             >Contacts</motion.h2>
           </a>
-          <a href={resumeLink} target="_blank" className={styles.navItem}>
+          <a href={resumeLink} target="_blank" rel="noopener noreferrer" className={styles.navItem}>
             <motion.h2
               whileHover={{ scale: 1.2 }}
             >Resume</motion.h2>
