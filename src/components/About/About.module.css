@@ -45,7 +45,7 @@
 
 .Intro p {
   font-size: 2rem;
-  font-style: italic;
+  font-weight: 400;
 }
 
 .Over {
@@ -56,7 +56,7 @@
   justify-self: center;
   width: fit-content;
   height: fit-content;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
 }
 
 .Over img {
@@ -71,15 +71,15 @@
 
 .Education {
   grid-area: Education;
-  margin: 40px;
   padding-bottom: 10px;
-  border-bottom: 2px solid black;
-  border-top: 2px solid black;
 }
 
-/* .Title {
-  grid-area: Title;
-} */
+.Title h1 {
+  padding: 8px 10px;
+  color: rgb(97, 97, 97);
+  border-bottom: 5px rgb(161, 161, 161) solid;
+  line-height: 4rem;
+}
 
 .Title h3 {
   font-size: 2rem;
@@ -90,7 +90,7 @@
 .School {
   display: grid;
   grid-template-columns: 2fr 1.5fr 1fr;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   justify-content: space-between;
 }
 
@@ -115,7 +115,6 @@
   grid-area: Other;
   display: flex;
   flex-flow: column;
-  border-bottom: 2px solid black;
 }
 
 .Box {

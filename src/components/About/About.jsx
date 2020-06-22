@@ -31,24 +31,27 @@ function About() {
         >
             <div className={styles.Heading}>
                 <h1>About Me.</h1>
-                <h2>Find out who I am, where I'm from and what I'm all about.</h2>
+                {/* <h2>Find out who I am, where I'm from and what I'm all about.</h2> */}
             </div>
             <div className={styles.Bio}>
                 <div className={styles.Intro}>
                     <h1>Who am I?</h1>
                     <p>
-                        I am Devendra Singh. I am avid learner like to learn new technological things.
-                        Like I wanted to learn React framework for front-end development. Thus making this
-                        portfoilio site in react itself. I am currently pursuing B.Tech from NIT Patna in Computer
-                        Science and Engineering.
-                        Future Software Engineer, web developer.
+                        I am Devendra Singh.
+                        Future Software Engineer, Web developer.
+                        People call me Dev. I like to call myself devsinghindra 😅😅.
+                        I am avid learner who like to learn new framework and tools.
+                        I like to travel and play video games alot.
+                        I am currently pursuing B.Tech from NIT Patna in Computer Science and Engineering.
                    </p>
                 </div>
                 <div className={styles.Over}>
                     <img src={profilePic} alt="profile" />
                 </div>
                 <div className={styles.Education}>
-                    <h1>Education</h1>
+                    <div className={styles.Title}>
+                        <h1>Educational Background :</h1>
+                    </div>
                     <ul>
                         <li className={styles.Title}><h3>High School</h3></li>
                         <div className={styles.School}>

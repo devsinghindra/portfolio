@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 
 import styles from "./Nav.module.css";
 
+const resumeLink = "https://drive.google.com/file/d/171Izx1VIwkmizSslJPAWiBTSSUhwcd7g/view?usp=sharing";
+
 function Nav() {
   return (
     <div>
@@ -27,18 +29,16 @@ function Nav() {
               whileHover={{ scale: 1.2 }}
             >Projects</motion.h2>
           </NavLink>
-          {/* <NavLink to="#contacts" className={styles.navItem} activeClassName={styles.navActive}> */}
           <a href="#contacts" className={styles.navItem}>
             <motion.h2
               whileHover={{ scale: 1.2 }}
             >Contacts</motion.h2>
           </a>
-          {/* </NavLink> */}
-          <NavLink to="/resume" target="_blank" className={styles.navItem} activeClassName={styles.navActive}>
+          <a href={resumeLink} target="_blank" className={styles.navItem}>
             <motion.h2
               whileHover={{ scale: 1.2 }}
             >Resume</motion.h2>
-          </NavLink>
+          </a>
         </div>
       </nav>
     </div>
