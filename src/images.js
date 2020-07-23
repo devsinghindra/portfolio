@@ -6,9 +6,20 @@ import secrets from "./assets/images/secrets1.png";
 import flutterChat from "./assets/images/flutterChat1.jpg";
 import flutterTodo from "./assets/images/flutterTodo.jpg";
 import librarian from "./assets/images/librarian5.jpg";
+import dashboard from "./assets/images/dashboard1.jpg";
 import profilePic from "./assets/images/dreamPro.jpg";
 
 const images = [
+
+  {
+    id: 0,
+    src: dashboard,
+    title: "Dashboard",
+    link: "https://tourist-bot-hilapp.web.app/",
+    gitLink: "https://github.com/devsinghindra/dashboard",
+    description: `A visualization dashboard made for sentiment analysis of tweets of indians public during 3 months of covid19 pandemic.
+                  Made using reactjs, chartjs used for charting and firebase as backened.`,
+  },
   {
     id: 1,
     src: chatRoom,
@@ -27,27 +38,27 @@ const images = [
     link: "https://devsinghindra-todos.herokuapp.com/",
     description: "A multi page todo list app using node, express and ejs used mongoDB atlas as database. Deployed at heroku.",
   },
-  {
-    id: 3,
-    src: covid19,
-    title: "Covid Tracker",
-    link: "http://covid19tracer.herokuapp.com/",
-    description: "A covid19 tracker web app made using reactjs for front-end and chartjs for plotting various charts and axios for api calls.",
-  },
-  {
-    id: 4,
-    src: keeper,
-    title: "Keeper",
-    link: "https://github.com/devsinghindra/keeper",
-    description: "A simple note taking web-app made using reactjs. You can add and delete notes.",
-  },
-  {
-    id: 5,
-    src: secrets,
-    title: "Secrets",
-    link: "https://github.com/devsinghindra/Secrets",
-    description: "A node app made for learning various level of authentication security wise. Applying various authentication methods lik bcrypt, passportjs, and outh2.",
-  },
+  // {
+  //   id: 3,
+  //   src: covid19,
+  //   title: "Covid Tracker",
+  //   link: "http://covid19tracer.herokuapp.com/",
+  //   description: "A covid19 tracker web app made using reactjs for front-end and chartjs for plotting various charts and axios for api calls.",
+  // },
+  // {
+  //   id: 4,
+  //   src: keeper,
+  //   title: "Keeper",
+  //   link: "https://github.com/devsinghindra/keeper",
+  //   description: "A simple note taking web-app made using reactjs. You can add and delete notes.",
+  // },
+  // {
+  //   id: 5,
+  //   src: secrets,
+  //   title: "Secrets",
+  //   link: "https://github.com/devsinghindra/Secrets",
+  //   description: "A node app made for learning various level of authentication security wise. Applying various authentication methods lik bcrypt, passportjs, and OAuth2.",
+  // },
   {
     id: 6,
     src: flutterChat,
@@ -75,7 +86,7 @@ const images = [
     Books can be issued and reissued and returned by scanning isbn. 
     And automatically in realtime the change is reflected in Student app. 
     Get Instant search about availablity of books in library on the basis of title.`,
-  },
+  }
 ];
 
 export default images;
