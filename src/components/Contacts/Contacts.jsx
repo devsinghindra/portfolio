@@ -23,7 +23,7 @@ function Contacts() {
       </div>
       <div className={styles.Links}>
         <div className={styles.Element}>
-          <Mail style={linkStyle} />
+          <Mail style={linkStyle} className={styles.link} />
           <motion.a target="_blank" rel="noopener noreferrer" href="mailto:devsinghindra@gmail.com"
             whileHover={{ scale: 1.1 }}
           >
@@ -31,7 +31,7 @@ function Contacts() {
           </motion.a>
         </div>
         <div className={styles.Element}>
-          <LinkedIn style={linkStyle} />
+          <LinkedIn style={linkStyle} className={styles.link} />
           <motion.a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/devsinghindra"
             whileHover={{ scale: 1.1 }}
           >
@@ -39,7 +39,7 @@ function Contacts() {
           </motion.a>
         </div>
         <div className={styles.Element}>
-          <GitHub style={linkStyle} />
+          <GitHub style={linkStyle} className={styles.link} />
           <motion.a target="_blank" rel="noopener noreferrer" href="https://github.com/devsinghindra"
             whileHover={{ scale: 1.1 }}
           >

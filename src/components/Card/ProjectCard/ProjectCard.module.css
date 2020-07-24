@@ -52,3 +52,49 @@
   box-shadow: 0 5px 30px rgba(0, 0, 0, 1);
   border-radius: 3px;
 }
+
+@media screen and (max-width: 480px),
+  (max-height: 480px) and (orientation: landscape) {
+  .Project {
+    justify-content: space-evenly;
+    flex-flow: column;
+    align-items: center;
+    padding: 25px 20px;
+  }
+
+  .Desc {
+    padding: 0 25px;
+    width: 90%;
+  }
+
+  .Desc h1 {
+    margin: 0;
+    line-height: 2rem;
+  }
+
+  .Desc p {
+    font-size: 1.2rem;
+  }
+
+  .PrOver {
+    padding: 20px 15px 80px;
+    margin-bottom: 50px;
+  }
+
+  .PrOver img {
+    height: 200px;
+    width: 300px;
+  }
+
+  .Flutter {
+    background-color: #f1f1f1;
+    padding: 25px;
+    margin-bottom: 50px;
+  }
+
+  .Flutter img {
+    height: 400px;
+    width: 200px;
+    margin: 0 0 -50px;
+  }
+}

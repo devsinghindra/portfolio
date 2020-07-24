@@ -59,3 +59,60 @@
   border-bottom: 5px rgb(161, 161, 161) solid;
   line-height: 4rem;
 }
+
+@media screen and (max-width: 480px),
+  (max-height: 480px) and (orientation: landscape) {
+  .Bio {
+    flex-flow: column-reverse;
+    align-items: center;
+    padding: 50px 10px 100px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
+  }
+
+  .Intro {
+    text-align: center;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .Intro h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    letter-spacing: 0.3rem;
+  }
+
+  .Intro p {
+    font-size: 1rem;
+    font-style: italic;
+  }
+
+  .Over {
+    background-color: #121316;
+    padding: 20px 20px;
+    margin-bottom: 50px;
+  }
+
+  .Over img {
+    height: 200px;
+    width: 180px;
+    margin: 0 0 -50px;
+    position: relative;
+    -webkit-box-shadow: 0 5px 30px rgba(0, 0, 0, 1);
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 1);
+    border-radius: 3px;
+  }
+
+  .Featured {
+    display: flex;
+    /* background-color: black; */
+    flex-flow: column;
+    justify-content: space-evenly;
+    padding: 0 10px;
+  }
+
+  .Featured h1 {
+    color: rgb(97, 97, 97);
+    border-bottom: 5px rgb(161, 161, 161) solid;
+    line-height: 4rem;
+  }
+}

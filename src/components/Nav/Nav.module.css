@@ -3,6 +3,7 @@
   justify-content: space-around;
   text-align: center;
   padding-top: 50px;
+  flex: 1;
   padding-bottom: 50px;
   background-color: #191919;
   align-items: center;
@@ -56,4 +57,33 @@
   color: rgb(255, 255, 255);
   border-bottom: 4px solid orange;
   /* cursor: default; */
+}
+
+.Sidebar {
+  display: flex;
+  flex: 1;
+  height: fit-content;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 100;
+  justify-content: space-between;
+  background-color: #191919;
+  color: white;
+  align-items: baseline;
+}
+
+.Sidebar .Logo {
+  font-size: 0.8rem;
+  margin-left: 15px;
+}
+
+.Menu h1 {
+  margin: 0;
+  color: white;
+}
+
+.MenuLink {
+  text-decoration: none;
+  color: black;
 }

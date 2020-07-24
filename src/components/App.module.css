@@ -2,6 +2,7 @@
   flex: 1;
   display: flex;
   flex-flow: column;
+  /* background-color: yellow; */
   justify-content: space-between;
 }
 
@@ -10,4 +11,19 @@
   text-align: center;
   color: white;
   letter-spacing: 0.15rem;
+}
+
+.SideBar {
+  display: none;
+}
+
+@media screen and (max-width: 480px),
+  (max-height: 480px) and (orientation: landscape) {
+  .Desktop {
+    display: none;
+  }
+  .SideBar {
+    display: block;
+    margin-bottom: 50px;
+  }
 }

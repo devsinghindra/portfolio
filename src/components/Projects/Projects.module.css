@@ -25,3 +25,24 @@
   align-content: space-around; /*after wraping*/
   /* align-items: flex-end; */
 }
+
+@media screen and (max-width: 480px),
+  (max-height: 480px) and (orientation: landscape) {
+  .Heading {
+    padding: 50px 0 100px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
+  }
+
+  .Heading h1 {
+    font-size: 2rem;
+  }
+
+  .Card {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: space-around; /*after wraping*/
+    /* align-items: flex-end; */
+  }
+}

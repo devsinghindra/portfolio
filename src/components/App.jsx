@@ -2,7 +2,7 @@ import React from "react";
 import { Switch, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
-import Nav from "./Nav/Nav";
+import Nav, { SideBar } from "./Nav/Nav";
 import Home from "./Home/Home";
 import Projects from "./Projects/Projects";
 import Contacts from "./Contacts/Contacts";
@@ -14,7 +14,12 @@ function App() {
   const location = useLocation();
   return (
     <div className={styles.Container}>
-      <Nav />
+      <div className={styles.Desktop}>
+        <Nav />
+      </div>
+      <div className={styles.SideBar}>
+        <SideBar />
+      </div>
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.key}>
           <Route path="/" exact component={Home} />
@@ -26,7 +31,7 @@ function App() {
         <Contacts />
       </div>
       <div className={styles.Footer}>
-        <p class="copyright">© {new Date().getFullYear()} Devendra Singh.</p>
+        <p>© {new Date().getFullYear()} Devendra Singh.</p>
       </div>
     </div>
   );
