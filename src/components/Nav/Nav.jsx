@@ -69,7 +69,7 @@ function SimpleMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handleClick = (event) => {
-    console.log(event.currentTarget)
+    // console.log(event.currentTarget)
     setAnchorEl(event.currentTarget);
   };
 
