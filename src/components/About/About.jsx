@@ -50,7 +50,7 @@ function About() {
                 </div>
                 <div className={styles.Education}>
                     <div className={styles.Title}>
-                        <h1>Educational Background :</h1>
+                        <h1>Educational Background</h1>
                     </div>
                     <ul>
                         <li className={styles.Title}><h3>High School</h3></li>
@@ -75,7 +75,7 @@ function About() {
                 </div>
                 <div className={styles.Skills}>
                     <div className={styles.Title}>
-                        <h1>Skills : </h1>
+                        <h1>Skills  </h1>
                     </div>
                     <div className={styles.Box}>
                         <Skill src={reactIcon} title="React" />
@@ -86,7 +86,7 @@ function About() {
                 </div>
                 <div className={styles.Languages}>
                     <div className={styles.Title}>
-                        <h1>Programming Languages : </h1>
+                        <h1>Programming Languages  </h1>
                     </div>
                     <div className={styles.Box}>
                         <Skill src={jsIcon} title="JavaScript" />
@@ -97,7 +97,7 @@ function About() {
                 </div>
                 <div className={styles.Other}>
                     <div className={styles.Title}>
-                        <h1 >Other : </h1>
+                        <h1 >Others </h1>
                     </div>
                     <div className={styles.Box}>
                         <Skill src={gitIcon} title="Git" />

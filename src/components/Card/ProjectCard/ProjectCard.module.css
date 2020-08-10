@@ -17,9 +17,18 @@
 }
 
 .Desc p {
+  margin-bottom: 10px;
   font-size: 1.5rem;
   font-style: italic;
 }
+
+.Desc a{
+  font-weight: 500;
+  /* text-decoration: none; */
+  padding: 0 10px 0 0;
+  color: blue;
+}
+
 
 .PrOver {
   background-color: #f1f1f1;

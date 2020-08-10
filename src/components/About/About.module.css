@@ -216,6 +216,21 @@
     grid-template-rows: 1fr auto;
   }
 
+  .Skills{
+    width: 100%;
+    text-align: center;
+  }
+
+  .Languages{
+    text-align: center;
+    width: 100%;
+  }
+
+  .Other{
+    text-align: center;
+    width: 100%;
+  }
+
   .Skill {
     justify-self: center;
   }

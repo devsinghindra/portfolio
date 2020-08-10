@@ -25,6 +25,7 @@ const images = [
     src: chatRoom,
     title: "Chat Room",
     link: "https://chat-rooms.netlify.app/",
+    gitLink:"https://github.com/devsinghindra/chat-room-client",
     description: `A Client-side web app made using react.js for creating rooms for chats.
                  This app communicate with server-side app which handles all the backend stuffs like:
                  Adding user,
@@ -36,6 +37,7 @@ const images = [
     src: todo,
     title: "Todo",
     link: "https://devsinghindra-todos.herokuapp.com/",
+    gitLink:"https://github.com/devsinghindra/ToDo",
     description: "A multi page todo list app using node, express and ejs used mongoDB atlas as database. Deployed at heroku.",
   },
   // {
@@ -43,41 +45,47 @@ const images = [
   //   src: covid19,
   //   title: "Covid Tracker",
   //   link: "http://covid19tracer.herokuapp.com/",
+  //   gitLink: "http://covid19tracer.herokuapp.com/",
   //   description: "A covid19 tracker web app made using reactjs for front-end and chartjs for plotting various charts and axios for api calls.",
   // },
   // {
   //   id: 4,
   //   src: keeper,
   //   title: "Keeper",
-  //   link: "https://github.com/devsinghindra/keeper",
+  //   link: "",
+  //   gitLink: "https://github.com/devsinghindra/keeper",
   //   description: "A simple note taking web-app made using reactjs. You can add and delete notes.",
   // },
   // {
   //   id: 5,
   //   src: secrets,
   //   title: "Secrets",
-  //   link: "https://github.com/devsinghindra/Secrets",
+  //   link: "",
+  //   gitLink: "https://github.com/devsinghindra/Secrets",
   //   description: "A node app made for learning various level of authentication security wise. Applying various authentication methods lik bcrypt, passportjs, and OAuth2.",
   // },
   {
     id: 6,
     src: flutterChat,
     title: "Flutter Chat",
-    link: "https://github.com/devsinghindra/flutter-chat",
+    link: "",
+    gitLink: "https://github.com/devsinghindra/flutter-chat",
     description: "A realtime chat app using flutter and firebase. With feature of user authentication with email.",
   },
   {
     id: 7,
     src: flutterTodo,
     title: "Flutter Todo",
-    link: "https://github.com/devsinghindra/todo-flutter",
+    link: "",
+    gitLink: "https://github.com/devsinghindra/todo-flutter",
     description: "A todo app using flutter. Mark it completed when task done by checking checkbox. Delete the task when it is not required.",
   },
   {
     id: 8,
     src: librarian,
     title: "Librarian",
-    link: "https://github.com/devsinghindra/librarian",
+    link: "",
+    gitLink: "https://github.com/devsinghindra/librarian",
     description: `A smart app for librarians for managing Library related transaction like adding book to database, and issue, reissue, return etc.
     Authenticated Sign In options for Librarian.
     Search book by scanning barcode, by isbn , by title and voice.

@@ -16,7 +16,7 @@ function ProjectCard(props) {
                 animate={{ x: 0 }}
                 transition={{ duration: 1.5 }}
                 className={`${styles.PrOver} ${flutterStyle}`}>
-                <a target="_blank" rel="noopener noreferrer" href={props.link}><img src={props.src} alt="" /></a>
+               {props.link!=="" ? <a target="_blank" rel="noopener noreferrer" href={props.link}><img src={props.src} alt={props.title} /></a>:<img src={props.src} alt={props.title}/>}
             </motion.div>
             <motion.div
                 initial={{ x: "100vw" }}
@@ -27,6 +27,8 @@ function ProjectCard(props) {
                 <p>
                     {props.description}
                 </p>
+                <a href={props.info.gitLink} target="_blank" rel="noopener noreferrer">GitHub</a>
+                {props.link!=="" && <a href={props.link} target="_blank" rel="noopener noreferrer">Website</a>}
             </motion.div>
         </div>
     );

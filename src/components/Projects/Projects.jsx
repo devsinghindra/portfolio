@@ -41,6 +41,7 @@ function Projects() {
               title={img.title}
               link={img.link}
               description={img.description}
+              info={img}
             />
           );
         })}

@@ -53,8 +53,8 @@ function Home() {
       </div>
       <div className={styles.Featured}>
         <h1>Featured Projects</h1>
-        <ProjectCard link={images[0].link} title={images[0].title} description={images[0].description} src={images[0].src} />
-        <ProjectCard link={images[images.length - 1].link} title={images[images.length - 1].title} description={images[images.length - 1].description} src={images[images.length - 1].src} />
+        <ProjectCard link={images[0].link} title={images[0].title} description={images[0].description} src={images[0].src} info={images[0]}/>
+        <ProjectCard link={images[images.length - 1].link} title={images[images.length - 1].title} description={images[images.length - 1].description} src={images[images.length - 1].src} info={images[images.length - 1]} />
       </div>
 
     </motion.div>
