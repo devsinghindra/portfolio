@@ -68,7 +68,7 @@ function About() {
                         <li className={styles.Title}><h3>Bachelor of Technology</h3></li>
                         <div className={styles.School}>
                             <span>National Institute of Technology</span>
-                            <span>CGPA : 7.4</span>
+                            <span>CGPA : 7.47</span>
                             <span>2017-2021</span>
                         </div>
                     </ul>

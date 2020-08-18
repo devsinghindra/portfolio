@@ -15,7 +15,8 @@ function ProjectCard(props) {
                 initial={{ x: "-100vw" }}
                 animate={{ x: 0 }}
                 transition={{ duration: 1.5 }}
-                className={`${styles.PrOver} ${flutterStyle}`}>
+                className={`${styles.PrOver} ${flutterStyle}`}
+                whileHover={{scale: 1.01}}>
                {props.link!=="" ? <a target="_blank" rel="noopener noreferrer" href={props.link}><img src={props.src} alt={props.title} /></a>:<img src={props.src} alt={props.title}/>}
             </motion.div>
             <motion.div
