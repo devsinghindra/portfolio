@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 import styles from "./Nav.module.css";
 
-const resumeLink = "https://devsinghindra.imfast.io/resume.pdf";
+const resumeLink = "https://devsinghindra.imfast.io/DevendraSinghResume.pdf";
 
 function Nav() {
   return (
