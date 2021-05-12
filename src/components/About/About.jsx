@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { profilePic } from "../../images";
-import { reactIcon, jsIcon, flutterIcon, dartIcon, mlIcon, pythonIcon, cpIcon, cppIcon, gitIcon, githubIcon } from "../../icons";
+import { profilePic2} from "../../images";
+import { reactIcon, jsIcon, flutterIcon, dartIcon, javaIcon, springIcon, cpIcon, cppIcon, gitIcon, githubIcon } from "../../icons";
 
 import styles from "./About.module.css";
 
@@ -46,7 +46,7 @@ function About() {
                    </p>
                 </div>
                 <div className={styles.Over}>
-                    <img src={profilePic} alt="profile" />
+                    <motion.img src={profilePic2} alt="profile" whileHover={{ scale: 1.1 }}/>
                 </div>
                 <div className={styles.Education}>
                     <div className={styles.Title}>
@@ -78,9 +78,9 @@ function About() {
                         <h1>Skills  </h1>
                     </div>
                     <div className={styles.Box}>
+                        <Skill src={springIcon} title="Spring" />
                         <Skill src={reactIcon} title="React" />
                         <Skill src={flutterIcon} title="Flutter" />
-                        <Skill src={mlIcon} title="Machine Learning" />
                         <Skill src={cpIcon} title="Algorithms" />
                     </div>
                 </div>
@@ -89,9 +89,9 @@ function About() {
                         <h1>Programming Languages  </h1>
                     </div>
                     <div className={styles.Box}>
+                        <Skill src={javaIcon} title="Java" />
                         <Skill src={jsIcon} title="JavaScript" />
                         <Skill src={dartIcon} title="Dart" />
-                        <Skill src={pythonIcon} title="Pyhton" />
                         <Skill src={cppIcon} title="C++" />
                     </div>
                 </div>

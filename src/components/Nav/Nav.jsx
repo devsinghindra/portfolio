@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -7,9 +7,7 @@ import { motion } from "framer-motion";
 
 import styles from "./Nav.module.css";
 
-const resumeLink = "https://drive.google.com/file/d/1JnW_FNXxLp5_s5X8L3DDp78TN4zAV2N8/view?usp=sharing";
-
-function Nav() {
+function Nav(props) {
   return (
     <div>
       <nav className={styles.nav}>
@@ -37,7 +35,7 @@ function Nav() {
               whileHover={{ scale: 1.2 }}
             >Contacts</motion.h2>
           </a>
-          <a href={resumeLink} target="_blank" rel="noopener noreferrer" className={styles.navItem}>
+          <a href={props.resumeLink} target="_blank" rel="noopener noreferrer" className={styles.navItem}>
             <motion.h2
               whileHover={{ scale: 1.2 }}
             >Resume</motion.h2>
@@ -48,7 +46,7 @@ function Nav() {
   );
 }
 
-function SideBar() {
+function SideBar(props) {
 
   return (
     <div className={styles.Sidebar}>
@@ -60,12 +58,12 @@ function SideBar() {
           whileHover={{ scale: 1.2 }}
         >DEV</motion.h2>
       </NavLink>
-      <SimpleMenu />
+      <SimpleMenu resumeLink={props.resumeLink}/>
     </div>
   );
 }
 
-function SimpleMenu() {
+function SimpleMenu(props) {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handleClick = (event) => {
@@ -92,7 +90,7 @@ function SimpleMenu() {
         <MenuItem onClick={handleClose}><NavLink to="/about" className={styles.MenuLink} activeClassName={styles.navActive}> About</NavLink></MenuItem>
         <MenuItem onClick={handleClose}><NavLink to="/projects" className={styles.MenuLink} activeClassName={styles.navActive}> Projects</NavLink></MenuItem>
         <MenuItem onClick={handleClose}><a href="#contacts" className={styles.MenuLink}> Contacts</a></MenuItem>
-        <MenuItem onClick={handleClose}><a href={resumeLink} target="_blank" rel="noopener noreferrer" className={styles.MenuLink}>Resume</a></MenuItem>
+        <MenuItem onClick={handleClose}><a href={props.resumeLink} target="_blank" rel="noopener noreferrer" className={styles.MenuLink}>Resume</a></MenuItem>
       </Menu>
     </div>
   );

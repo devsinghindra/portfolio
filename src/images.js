@@ -8,6 +8,7 @@ import flutterTodo from "./assets/images/flutterTodo.jpg";
 import librarian from "./assets/images/librarian5.jpg";
 import dashboard from "./assets/images/dashboard1.jpg";
 import profilePic from "./assets/images/dreamPro.jpg";
+import profilePic2 from "./assets/images/dreamNew.jpeg";
 
 const images = [
 
@@ -98,4 +99,4 @@ const images = [
 ];
 
 export default images;
-export { profilePic };
+export { profilePic ,profilePic2};
